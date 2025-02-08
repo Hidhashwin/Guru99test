@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Guru suite]" verbose="0">
+  <test thread-count="5" name="accounttest(failed)" verbose="0">
+    <classes>
+      <class name="testcases.createaccounttest">
+        <methods>
+          <include name="newaccount"/>
+          <include name="teardown"/>
+          <include name="Launchbrowser"/>
+        </methods>
+      </class> <!-- testcases.createaccounttest -->
+    </classes>
+  </test> <!-- accounttest(failed) -->
+</suite> <!-- Failed suite [Guru suite] -->

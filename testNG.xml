@@ -1,0 +1,22 @@
+<suite name="Guru suite"> 
+	
+	<test name="logintest">
+		<classes>
+			<class name="testcases.logintest">	
+			</class>
+		</classes>
+		</test>
+		
+		<test name="accounttest">
+		<classes>
+			<class name="testcases.createaccounttest">	
+			</class>
+		</classes>
+		</test>
+		<test name="editcustomertest">
+		<classes>
+			<class name="testcases.editcustomertest">	
+			</class>
+		</classes>
+		</test>
+</suite>
