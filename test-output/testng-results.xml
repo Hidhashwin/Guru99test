@@ -1,37 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-08T18:12:07 IST" name="Guru suite" finished-at="2025-02-08T18:12:26 IST" duration-ms="19133">
+  <suite started-at="2025-02-09T08:38:47 IST" name="Guru suite" finished-at="2025-02-09T08:39:05 IST" duration-ms="18322">
     <groups>
     </groups>
-    <test started-at="2025-02-08T18:12:07 IST" name="logintest" finished-at="2025-02-08T18:12:13 IST" duration-ms="5366">
+    <test started-at="2025-02-09T08:38:47 IST" name="logintest" finished-at="2025-02-09T08:38:52 IST" duration-ms="5364">
       <class name="testcases.logintest">
-        <test-method signature="check()[pri:0, instance:testcases.logintest@cecf639]" started-at="2025-02-08T18:12:07 IST" name="check" finished-at="2025-02-08T18:12:13 IST" duration-ms="5291" status="PASS">
+        <test-method signature="check()[pri:0, instance:testcases.logintest@1caa0244]" started-at="2025-02-09T08:38:47 IST" name="check" finished-at="2025-02-09T08:38:52 IST" duration-ms="5284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check -->
       </class> <!-- testcases.logintest -->
     </test> <!-- logintest -->
-    <test started-at="2025-02-08T18:12:13 IST" name="accounttest" finished-at="2025-02-08T18:12:21 IST" duration-ms="8351">
+    <test started-at="2025-02-09T08:38:52 IST" name="accounttest" finished-at="2025-02-09T08:38:58 IST" duration-ms="6321">
       <class name="testcases.createaccounttest">
-        <test-method signature="newaccount()[pri:0, instance:testcases.createaccounttest@6c4906d3]" started-at="2025-02-08T18:12:13 IST" name="newaccount" finished-at="2025-02-08T18:12:21 IST" duration-ms="8341" status="PASS">
+        <test-method signature="newaccount()[pri:0, instance:testcases.createaccounttest@65987993]" started-at="2025-02-09T08:38:52 IST" name="newaccount" finished-at="2025-02-09T08:38:58 IST" duration-ms="6296" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Email Address Already Exist !!}
+  (Session info: chrome=133.0.6943.59): Email Address Already Exist !!
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38dc14b65efc1b45e6cec2fa785a8d83, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50543/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38dc14b65efc1b45e6cec2fa785a8d83]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Email Address Already Exist !!}
+  (Session info: chrome=133.0.6943.59): Email Address Already Exist !!
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38dc14b65efc1b45e6cec2fa785a8d83, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50543/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38dc14b65efc1b45e6cec2fa785a8d83
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+at commonfunctions.takingscreenshot.takeScreenshot(takingscreenshot.java:19)
+at testcases.createaccounttest.newaccount(createaccounttest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newaccount -->
       </class> <!-- testcases.createaccounttest -->
     </test> <!-- accounttest -->
-    <test started-at="2025-02-08T18:12:21 IST" name="editcustomertest" finished-at="2025-02-08T18:12:26 IST" duration-ms="5356">
+    <test started-at="2025-02-09T08:38:58 IST" name="editcustomertest" finished-at="2025-02-09T08:39:05 IST" duration-ms="6538">
       <class name="testcases.editcustomertest">
-        <test-method is-config="true" signature="Launchbrowser()[pri:0, instance:testcases.editcustomertest@6b695b06]" started-at="2025-02-08T18:11:56 IST" name="Launchbrowser" finished-at="2025-02-08T18:12:07 IST" duration-ms="11293" status="PASS">
+        <test-method is-config="true" signature="Launchbrowser()[pri:0, instance:testcases.editcustomertest@4d1bf319]" started-at="2025-02-09T08:38:36 IST" name="Launchbrowser" finished-at="2025-02-09T08:38:47 IST" duration-ms="10038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launchbrowser -->
-        <test-method signature="editcustomer()[pri:0, instance:testcases.editcustomertest@6b695b06]" started-at="2025-02-08T18:12:21 IST" name="editcustomer" finished-at="2025-02-08T18:12:26 IST" duration-ms="5348" status="PASS">
+        <test-method signature="editcustomer()[pri:0, instance:testcases.editcustomertest@4d1bf319]" started-at="2025-02-09T08:38:58 IST" name="editcustomer" finished-at="2025-02-09T08:39:05 IST" duration-ms="6517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editcustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.editcustomertest@6b695b06]" started-at="2025-02-08T18:12:26 IST" name="teardown" finished-at="2025-02-08T18:12:28 IST" duration-ms="1626" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.editcustomertest@4d1bf319]" started-at="2025-02-09T08:39:05 IST" name="teardown" finished-at="2025-02-09T08:39:05 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -9,17 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Guru suite</th></tr>
-<tr><td><a href="#t0">logintest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,366</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">accounttest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,351</td><td></td><td></td></tr>
-<tr><td><a href="#t2">editcustomertest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,356</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">19,073</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">logintest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,364</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">accounttest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,321</td><td></td><td></td></tr>
+<tr><td><a href="#t2">editcustomertest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,538</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">18,223</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Guru suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">logintest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.logintest</td><td><a href="#m0">check</a></td><td rowspan="1">1739018527843</td><td rowspan="1">5291</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">accounttest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.createaccounttest</td><td><a href="#m1">newaccount</a></td><td rowspan="1">1739018533215</td><td rowspan="1">8341</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">editcustomertest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.editcustomertest</td><td><a href="#m2">editcustomer</a></td><td rowspan="1">1739018541575</td><td rowspan="1">5348</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Guru suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">logintest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.logintest</td><td><a href="#m0">check</a></td><td rowspan="1">1739070527086</td><td rowspan="1">5284</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">accounttest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.createaccounttest</td><td><a href="#m1">newaccount</a></td><td rowspan="1">1739070532456</td><td rowspan="1">6296</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">editcustomertest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.editcustomertest</td><td><a href="#m2">editcustomer</a></td><td rowspan="1">1739070538837</td><td rowspan="1">6517</td></tr></tbody>
 </table>
 <h2>logintest</h2><h3 id="m0">testcases.logintest#check</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>accounttest</h2><h3 id="m1">testcases.createaccounttest#newaccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>accounttest</h2><h3 id="m1">testcases.createaccounttest#newaccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Email Address Already Exist !!}
+  (Session info: chrome=133.0.6943.59): Email Address Already Exist !!
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38dc14b65efc1b45e6cec2fa785a8d83, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50543/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38dc14b65efc1b45e6cec2fa785a8d83
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+	at commonfunctions.takingscreenshot.takeScreenshot(takingscreenshot.java:19)
+	at testcases.createaccounttest.newaccount(createaccounttest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>editcustomertest</h2><h3 id="m2">testcases.editcustomertest#editcustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

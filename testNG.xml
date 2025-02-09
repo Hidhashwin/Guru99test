@@ -1,5 +1,10 @@
 <suite name="Guru suite"> 
 	
+	<listeners>
+		<listener class-name="listenerclass.mylistener">
+			</listener>
+	</listeners>
+	
 	<test name="logintest">
 		<classes>
 			<class name="testcases.logintest">	
