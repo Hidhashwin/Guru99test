@@ -38,6 +38,7 @@ public class editcustomertest extends commonfunctionsGuru1 {
 		act1.click(editcustomer_pageobjects.submit_button);
 		Thread.sleep(2000);
 		takingscreenshot.takeScreenshot(driver, "edit customer_id entered");
+		Thread.sleep(3000);
 	}
 
 }

@@ -1,52 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-08T22:01:24 IST" name="Guru suite" finished-at="2025-02-08T22:01:42 IST" duration-ms="17639">
+  <suite started-at="2025-02-24T08:20:21 IST" name="Guru suite" finished-at="2025-02-24T08:20:55 IST" duration-ms="33861">
     <groups>
     </groups>
-    <test started-at="2025-02-08T22:01:24 IST" name="logintest" finished-at="2025-02-08T22:01:29 IST" duration-ms="5109">
+    <test started-at="2025-02-24T08:20:21 IST" name="logintest" finished-at="2025-02-24T08:20:26 IST" duration-ms="5133">
       <class name="testcases.logintest">
-        <test-method signature="check()[pri:0, instance:testcases.logintest@6ca8564a]" started-at="2025-02-08T22:01:24 IST" name="check" finished-at="2025-02-08T22:01:29 IST" duration-ms="5011" status="PASS">
+        <test-method signature="check()[pri:0, instance:testcases.logintest@4f209819]" started-at="2025-02-24T08:20:21 IST" name="check" finished-at="2025-02-24T08:20:26 IST" duration-ms="5101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check -->
       </class> <!-- testcases.logintest -->
     </test> <!-- logintest -->
-    <test started-at="2025-02-08T22:01:30 IST" name="accounttest" finished-at="2025-02-08T22:01:36 IST" duration-ms="6250">
+    <test started-at="2025-02-24T08:20:26 IST" name="accounttest" finished-at="2025-02-24T08:20:35 IST" duration-ms="8216">
       <class name="testcases.createaccounttest">
-        <test-method signature="newaccount()[pri:0, instance:testcases.createaccounttest@40ef3420]" started-at="2025-02-08T22:01:30 IST" name="newaccount" finished-at="2025-02-08T22:01:36 IST" duration-ms="6235" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
+        <test-method signature="newaccount()[pri:0, instance:testcases.createaccounttest@441772e]" started-at="2025-02-24T08:20:26 IST" name="newaccount" finished-at="2025-02-24T08:20:35 IST" duration-ms="8185" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unexpected alert open: {Alert text : Email Address Already Exist !!}
-  (Session info: chrome=133.0.6943.59): Email Address Already Exist !!
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tr[4]/td[2]"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c6cc5dba6779011845bd2991016fb95e, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50278/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c6cc5dba6779011845bd2991016fb95e]]>
+Command: [2b0eb653d1e4846692221f44093b4db6, findElement {value=//tr[4]/td[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56806/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b0eb653d1e4846692221f44093b4db6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Email Address Already Exist !!}
-  (Session info: chrome=133.0.6943.59): Email Address Already Exist !!
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[4]/td[2]"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c6cc5dba6779011845bd2991016fb95e, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50278/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c6cc5dba6779011845bd2991016fb95e
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+Command: [2b0eb653d1e4846692221f44093b4db6, findElement {value=//tr[4]/td[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56806/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b0eb653d1e4846692221f44093b4db6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
-at commonfunctions.takingscreenshot.takeScreenshot(takingscreenshot.java:19)
-at testcases.createaccounttest.newaccount(createaccounttest.java:44)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy10.getText(Unknown Source)
+at testcases.createaccounttest.newaccount(createaccounttest.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,23 +92,103 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newaccount -->
       </class> <!-- testcases.createaccounttest -->
     </test> <!-- accounttest -->
-    <test started-at="2025-02-08T22:01:36 IST" name="editcustomertest" finished-at="2025-02-08T22:01:42 IST" duration-ms="6207">
+    <test started-at="2025-02-24T08:20:35 IST" name="editcustomertest" finished-at="2025-02-24T08:20:55 IST" duration-ms="20348">
       <class name="testcases.editcustomertest">
-        <test-method is-config="true" signature="Launchbrowser()[pri:0, instance:testcases.editcustomertest@795cd85e]" started-at="2025-02-08T22:01:08 IST" name="Launchbrowser" finished-at="2025-02-08T22:01:24 IST" duration-ms="16750" status="PASS">
+        <test-method is-config="true" signature="Launchbrowser()[pri:0, instance:testcases.editcustomertest@42e99e4a]" started-at="2025-02-24T08:20:07 IST" name="Launchbrowser" finished-at="2025-02-24T08:20:21 IST" duration-ms="14488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launchbrowser -->
-        <test-method signature="editcustomer()[pri:0, instance:testcases.editcustomertest@795cd85e]" started-at="2025-02-08T22:01:36 IST" name="editcustomer" finished-at="2025-02-08T22:01:42 IST" duration-ms="6205" status="PASS">
+        <test-method signature="editcustomer()[pri:0, instance:testcases.editcustomertest@42e99e4a]" started-at="2025-02-24T08:20:35 IST" name="editcustomer" finished-at="2025-02-24T08:20:55 IST" duration-ms="20337" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Edit Customer']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Edit Customer']' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at commonfunctions.WaitUtility.waitForElementToBeClickable(WaitUtility.java:21)
+at commonfunctions.actionclass.click(actionclass.java:19)
+at testcases.editcustomertest.editcustomer(editcustomertest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Edit Customer']"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b0eb653d1e4846692221f44093b4db6, findElement {value=//a[text()='Edit Customer'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56806/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b0eb653d1e4846692221f44093b4db6
+at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editcustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.editcustomertest@795cd85e]" started-at="2025-02-08T22:01:42 IST" name="teardown" finished-at="2025-02-08T22:01:42 IST" duration-ms="280" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.editcustomertest@42e99e4a]" started-at="2025-02-24T08:20:55 IST" name="teardown" finished-at="2025-02-24T08:20:56 IST" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

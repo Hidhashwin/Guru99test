@@ -1,27 +1,39 @@
-<suite name="Guru suite"> 
-	
+<suite name="Guru suite">
+
 	<listeners>
 		<listener class-name="listenerclass.mylistener">
-			</listener>
+		</listener>
 	</listeners>
 	
 	<test name="logintest">
 		<classes>
-			<class name="testcases.logintest">	
+			<class name="testcases.logintest">
 			</class>
 		</classes>
-		</test>
+	</test>
 		
 		<test name="accounttest">
 		<classes>
-			<class name="testcases.createaccounttest">	
+			<class name="testcases.createaccounttest">
 			</class>
 		</classes>
-		</test>
+	</test>
 		<test name="editcustomertest">
 		<classes>
-			<class name="testcases.editcustomertest">	
+			<class name="testcases.editcustomertest">
 			</class>
 		</classes>
-		</test>
+	</test>--> 
+		<test name="newAccounttest">
+		<classes>
+			<class name="testcases.newAccounttest">
+			</class>
+		</classes>
+	</test>
+	<test name="deposittesting">
+		<classes>
+			<class name="testcases.deposittest">
+			</class>
+		</classes>
+	</test>
 </suite>

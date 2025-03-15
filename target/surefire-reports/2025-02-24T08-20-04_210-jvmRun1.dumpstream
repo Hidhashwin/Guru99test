@@ -1,0 +1,25 @@
+# Created at 2025-02-24T08:20:51.003
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+# Created at 2025-02-24T08:20:55.565
+Unexpected IOException with stream: on Test Failure
+
+
+# Created at 2025-02-24T08:20:55.571
+Unexpected IOException: 8,1,testcases.editcustomertest,editcustomer(testcases.editcustomertest),null,Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Edit Customer']' (tried for 20 second(s) with 500 milliseconds interval),null,Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Edit Customer']' (tried for 20 second(s) with 500 milliseconds interval),editcustomertest.editcustomer:23 \00BB Timeout Expected condition failed: waiting ...,org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Edit Customer']' (tried for 20 second(s) with 500 milliseconds interval)\000A\0009at testcases.editcustomertest.editcustomer(editcustomertest.java:23)\000ACaused by: org.openqa.selenium.NoSuchElementException: \000Ano such element: Unable to locate element: {"method":"xpath"\002C"selector":"//a[text()='Edit Customer']"}\000A  (Session info: chrome=133.0.6943.127)\000AFor documentation on this error\002C please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\000ABuild info: version: '4.24.0'\002C revision: '748ffc9bc3'\000ASystem info: os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [2b0eb653d1e4846692221f44093b4db6\002C findElement {value=//a[text()='Edit Customer']\002C using=xpath}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 133.0.6943.127\002C chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b...\002C userDataDir: C:\005CUsers\005CWELCOME\005CAppData\005CLo...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:56806}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:56806/devtoo...\002C se:cdpVersion: 133.0.6943.127\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 2b0eb653d1e4846692221f44093b4db6\000A\0009at testcases.editcustomertest.editcustomer(editcustomertest.java:23)\000A
+
+
+# Created at 2025-02-24T08:20:55.573
+Unexpected IOException with stream: on finish
+
+
+# Created at 2025-02-24T08:20:56.307
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

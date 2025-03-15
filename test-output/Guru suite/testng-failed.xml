@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="listenerclass.mylistener"/>
   </listeners>
-  <test thread-count="5" name="accounttest(failed)">
+  <test thread-count="5" name="deposittesting(failed)">
     <classes>
-      <class name="testcases.createaccounttest">
+      <class name="testcases.deposittest">
         <methods>
-          <include name="newaccount"/>
           <include name="teardown"/>
           <include name="Launchbrowser"/>
+          <include name="deposit"/>
         </methods>
-      </class> <!-- testcases.createaccounttest -->
+      </class> <!-- testcases.deposittest -->
     </classes>
-  </test> <!-- accounttest(failed) -->
+  </test> <!-- deposittesting(failed) -->
 </suite> <!-- Failed suite [Guru suite] -->

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Guru suite]" verbose="0">
+  <listeners>
+    <listener class-name="listenerclass.mylistener"/>
+  </listeners>
   <test thread-count="5" name="accounttest(failed)" verbose="0">
     <classes>
       <class name="testcases.createaccounttest">
@@ -12,4 +15,15 @@
       </class> <!-- testcases.createaccounttest -->
     </classes>
   </test> <!-- accounttest(failed) -->
+  <test thread-count="5" name="editcustomertest(failed)" verbose="0">
+    <classes>
+      <class name="testcases.editcustomertest">
+        <methods>
+          <include name="Launchbrowser"/>
+          <include name="teardown"/>
+          <include name="editcustomer"/>
+        </methods>
+      </class> <!-- testcases.editcustomertest -->
+    </classes>
+  </test> <!-- editcustomertest(failed) -->
 </suite> <!-- Failed suite [Guru suite] -->
